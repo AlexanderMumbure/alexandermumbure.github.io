@@ -1,182 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alexander Mumbure | Portfolio</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Mumbure - Cybersecurity Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<!-- Navbar -->
-<nav id="navbar">
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#github">GitHub</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-    <button id="theme-toggle">🌙</button>
-</nav>
-
-<!-- Header / Hero Section -->
-<header>
-    <div class="container">
-        <img src="assets/avatar.png" alt="Alexander Mumbure" class="avatar">
-        <h1>Alexander Mumbure</h1>
-        <p>Cybersecurity & Digital Forensics Student | Python Developer | Building tools for threat detection & memory forensics</p>
-        <div class="social-links">
-            <a href="https://github.com/<username>" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/<username>" target="_blank">LinkedIn</a>
-            <a href="mailto:youremail@example.com">Email</a>
-        </div>
-    </div>
-</header>
-
-<!-- Skills Section -->
-<section id="skills">
-    <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill">
-                <span>Python</span>
-                <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Alexander Mumbure</a>
             </div>
-            <div class="skill">
-                <span>Linux (Kali, Ubuntu)</span>
-                <div class="progress"><div class="progress-bar" style="width: 85%"></div></div>
-            </div>
-            <div class="skill">
-                <span>Windows Server & 11</span>
-                <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
-            </div>
-            <div class="skill">
-                <span>Volatility 3</span>
-                <div class="progress"><div class="progress-bar" style="width: 75%"></div></div>
-            </div>
-            <div class="skill">
-                <span>Rekall</span>
-                <div class="progress"><div class="progress-bar" style="width: 75%"></div></div>
-            </div>
-            <div class="skill">
-                <span>Wireshark</span>
-                <div class="progress"><div class="progress-bar" style="width: 85%"></div></div>
-            </div>
-            <div class="skill">
-                <span>Snort IDS/IPS</span>
-                <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
-            </div>
-            <div class="skill">
-                <span>Firewall (UFW/iptables)</span>
-                <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
-            </div>
-            <div class="skill">
-                <span>Cryptography & Ciphers</span>
-                <div class="progress"><div class="progress-bar" style="width: 70%"></div></div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </div>
-</section>
+    </nav>
 
-<!-- Projects Section -->
-<section id="projects">
-    <div class="container">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="assets/project1.png" alt="CyberGuard">
-                <h3>CyberGuard – Threat Scanner</h3>
-                <p>Python tool that scans files, processes, and network connections for suspicious activity.</p>
-                <a href="https://github.com/<username>/CyberGuard" target="_blank">View on GitHub</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Cybersecurity & Digital Forensics Specialist</h1>
+                <p class="hero-subtitle">Passionate about threat detection, memory forensics, and building secure systems through Python automation</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
             </div>
-            <div class="project-card">
-                <img src="assets/project2.png" alt="Cipher Tool">
-                <h3>Classical Cipher Encryption Tool</h3>
-                <p>Python program implementing Caesar, Affine, and Vigenère ciphers with encryption/decryption.</p>
-                <a href="https://github.com/<username>/CipherTool" target="_blank">View on GitHub</a>
+            <div class="hero-image">
+                <div class="code-animation">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="terminal-content">
+                            <span class="code-line">> python threat_scanner.py</span>
+                            <span class="code-line">[+] Scanning for malware...</span>
+                            <span class="code-line">[✓] System secured</span>
+                            <span class="code-line">> _</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- GitHub API Section -->
-<section id="github">
-    <div class="container">
-        <h2>Latest GitHub Repositories</h2>
-        <div id="repos" class="projects-grid"></div>
-    </div>
-</section>
-
-<!-- Education Section -->
-<section id="education">
-    <div class="container">
-        <h2>Education</h2>
-        <p><strong>Arrupe University</strong> – BSc in Cybersecurity & Digital Forensics, Class of 2028 | CGPA: 3.62</p>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact">
-    <div class="container">
-        <h2>Contact Me</h2>
-        <p>Reach out via email or connect with me on LinkedIn or GitHub.</p>
-        <div class="social-links">
-            <a href="https://github.com/<username>" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/<username>" target="_blank">LinkedIn</a>
-            <a href="mailto:youremail@example.com">Email</a>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a cybersecurity enthusiast specializing in digital forensics, threat analysis, and secure software development. My passion lies in creating tools that enhance security posture and automate defensive operations.</p>
+                    <p>With expertise in Python, memory forensics, and cryptographic systems, I focus on developing practical solutions for real-world security challenges.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Security Tools Built</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Passion for Security</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer>
-    <p>© 2025 Alexander Mumbure. All rights reserved.</p>
-</footer>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-shield-alt"></i> Cybersecurity</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Memory Forensics</span>
+                        <span class="skill-tag">Threat Detection</span>
+                        <span class="skill-tag">Malware Analysis</span>
+                        <span class="skill-tag">Network Security</span>
+                        <span class="skill-tag">Cryptography</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Volatility Framework</span>
+                        <span class="skill-tag">Bash Scripting</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Wireshark</span>
+                        <span class="skill-tag">VirtualBox</span>
+                        <span class="skill-tag">Linux/Windows</span>
+                        <span class="skill-tag">Cryptographic Tools</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- JavaScript -->
-<script>
-// Theme toggle
-const toggle = document.getElementById('theme-toggle');
-toggle.addEventListener('click', () => {
-    document.body.classList.toggle('light-mode');
-    toggle.textContent = document.body.classList.contains('light-mode') ? '🌙' : '☀️';
-});
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3>CyberGuard Threat Scanner</h3>
+                    <p>Advanced Python application for real-time malware detection, network monitoring, and secure threat quarantining with encryption capabilities.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Security</span>
+                        <span>Monitoring</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/AlexanderMumbure/cyberguard-threat-scanner" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
 
-// Animate skills
-const progressBars = document.querySelectorAll('.progress-bar');
-const animateSkills = () => {
-    progressBars.forEach(bar => {
-        const width = bar.style.width;
-        bar.style.width = '0';
-        setTimeout(() => bar.style.width = width, 100);
-    });
-};
-window.addEventListener('scroll', () => {
-    const skillsSection = document.getElementById('skills');
-    if (window.scrollY + window.innerHeight > skillsSection.offsetTop + 100) {
-        animateSkills();
-    }
-});
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-memory"></i>
+                    </div>
+                    <h3>Memory Forensics Lab</h3>
+                    <p>Automated memory analysis tool using Volatility 3 for insider threat detection, process analysis, and network connection monitoring.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Volatility 3</span>
+                        <span>Forensics</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/AlexanderMumbure/memory-forensics-lab" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
 
-// GitHub API fetch
-const username = "<your-github-username>";
-const reposContainer = document.getElementById('repos');
-fetch(`https://api.github.com/users/${username}/repos?sort=updated`)
-.then(res => res.json())
-.then(data => {
-    data.slice(0,6).forEach(repo => {
-        const card = document.createElement('div');
-        card.classList.add('project-card');
-        card.innerHTML = `
-            <h3>${repo.name}</h3>
-            <p>${repo.description || 'No description provided.'}</p>
-            <a href="${repo.html_url}" target="_blank">View on GitHub</a>
-        `;
-        reposContainer.appendChild(card);
-    });
-});
-</script>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Classical Cipher Tool</h3>
+                    <p>Comprehensive cryptography tool implementing Caesar, Affine, Vigenère, and Transportation ciphers for educational and analysis purposes.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Cryptography</span>
+                        <span>Algorithms</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/AlexanderMumbure/classical-cipher-tool" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
 
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>RSA Secure Communication</h3>
+                    <p>Python implementation of RSA encryption for secure key generation, message encryption, and digital communication protocols.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>RSA</span>
+                        <span>Encryption</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/AlexanderMumbure/ras-secure-communication" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in discussing cybersecurity projects, research opportunities, or potential collaborations.</p>
+                    <div class="contact-links">
+                        <a href="https://github.com/AlexanderMumbure" class="contact-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="mailto:your-email@example.com" class="contact-link">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Alexander Mumbure. All rights reserved.</p>
+            <p>Built with passion for cybersecurity and clean code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
